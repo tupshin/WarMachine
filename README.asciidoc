@@ -1,0 +1,9 @@
+# WarMachine
+
+Very preliminary end to end functionality checked.
+
+** Reads config from a toml file
+** Connects to a Cassandra instance with contact points specified in the toml
+** Creates a sample foo.bar keyspace and table if they don't exist
+** Populates foo.bar with two rows
+** If you browse to http://localhost:8087/foo/execute/select%20*%20from%20foo.bar you should get results in your browser. The initial foo is not currently used except for rustful routing
