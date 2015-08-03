@@ -61,7 +61,7 @@ fn execute(context: Context, mut response: Response) {
     };
    match session.execute(statement,0).wait() {
    	Ok(result) => {
-	    response.send(format!("Executing statement '{}'\n Response: '{}'", statement, result));		
+	    response.send(format!("Executing statement '{}'\n Response: {}", statement, result));		
    	}
    	Err(err) => {panic!("{:#?}",err)}
    }
