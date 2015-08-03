@@ -3,8 +3,6 @@ extern crate toml;
 use std::io::prelude::*;
 use std::fs::File;
 use std::collections::btree_map::BTreeMap;
-use std::net::SocketAddr;
-use std::str::FromStr;
 
 //FIXME this is all a gross hack
 

@@ -11,7 +11,7 @@ fn default(context: Context, response: Response) {
     response.send(format!("Please use a supported endpoint of either /:ks/prepare/:statement or /:ks/execute/:statement",));
 }
 
-
+//DISABLED. See execute()
 fn prepare(context: Context, mut response: Response) {
 	let session: &CassSession = if let Some(session) = context.global.get() {
         session
@@ -33,12 +33,13 @@ fn prepare(context: Context, mut response: Response) {
         None => "unknown statemnet"
     };
     
-    session.execute(statement,0).wait();
+    //session.execute(statement,0).wait();
 
     //Use the name from the path variable to say hello.
     response.send(format!("Preparing statement '{}' for keyspace, {}!", statement, ks));
 }
 
+//FIXME replace this with proper prepare/execute_prepared, instead of blindly executing raw strings
 fn execute(context: Context, mut response: Response) {
 	let session: &CassSession = if let Some(session) = context.global.get() {
         session
