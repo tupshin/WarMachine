@@ -1,6 +1,6 @@
 # WarMachine
 
-Very preliminary end to end functionality checked.
+Very preliminary end to end functionality.
 
 ** Reads config from a toml file
 ** Connects to a Cassandra instance with contact points specified in the toml
