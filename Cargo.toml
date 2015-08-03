@@ -7,6 +7,7 @@ authors = ["Tupshin Harper <tupshin@tupshin.com>", "Jonathan Shook", "Jon Haddad
 name="war_machine"
 path="src/main.rs"
 
+#preemptively adding all the dependencies I think we are likely to need
 [dependencies]
 clippy = "*"
 mio = "0.3.0"
