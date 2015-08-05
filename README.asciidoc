@@ -1,5 +1,7 @@
 # WarMachine
 
+https://docs.google.com/document/d/12ckGjGwZXDomnvQiCWnpSVIJwWABZsdQbXJ1VZ7MZSo/edit
+
 Very preliminary end to end functionality.
 
 ** Reads config from a toml file
